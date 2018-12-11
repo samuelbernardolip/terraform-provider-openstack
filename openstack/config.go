@@ -11,9 +11,9 @@ import (
 	"github.com/gophercloud/gophercloud"
 	"github.com/gophercloud/gophercloud/openstack"
 	"github.com/gophercloud/gophercloud/openstack/objectstorage/v1/swauth"
-	"github.com/gophercloud/utils/openstack/clientconfig"
 	"github.com/hashicorp/terraform/helper/pathorcontents"
 	"github.com/hashicorp/terraform/terraform"
+	"github.com/samuelbernardolip/utils/openstack/clientconfig"
 )
 
 type Config struct {
@@ -43,7 +43,6 @@ type Config struct {
 	oidcToken         string
 	oidcProtocol      string
 	oidcIDP           string
-	oidcAuthType      string
 
 	OsClient *gophercloud.ProviderClient
 }
@@ -119,7 +118,6 @@ func (c *Config) LoadAndValidate() error {
 			UserID:            c.UserID,
 			oidcToken:         c.oidcToken,
 			oidcIDP:           c.oidcIDP,
-			oidcAuthType:      c.oidcAuthType,
 			oidcProtocol:      c.oidcProtocol,
 		}
 		clientOpts.AuthInfo = authInfo

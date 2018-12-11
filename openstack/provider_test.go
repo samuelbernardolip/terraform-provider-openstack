@@ -374,7 +374,6 @@ func testAccAuthFromEnv() (*Config, error) {
 		oidcToken:         os.Getenv("OS_ACCESS_TOKEN"),
 		oidcProtocol:      os.Getenv("OS_PROTOCOL"),
 		oidcIDP:           os.Getenv("OS_IDENTITY_PROVIDER"),
-		oidcAuthType:      os.Getenv("OS_AUTH_TYPE"),
 	}
 
 	if err := config.LoadAndValidate(); err != nil {

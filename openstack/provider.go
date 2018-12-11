@@ -203,13 +203,6 @@ func Provider() terraform.ResourceProvider {
 				DefaultFunc: schema.EnvDefaultFunc("OS_IDENTITY_PROVIDER", ""),
 				Description: descriptions["oidc_idp"],
 			},
-
-			"oidc_authtype": &schema.Schema{
-				Type:        schema.TypeString,
-				Optional:    true,
-				DefaultFunc: schema.EnvDefaultFunc("OS_AUTH_TYPE", ""),
-				Description: descriptions["oidc_authtype"],
-			},
 		},
 
 		DataSourcesMap: map[string]*schema.Resource{
@@ -363,8 +356,6 @@ func init() {
 		"oidc_protocol": "The OIDC protocol.",
 
 		"oidc_idp": "The OIDC identity provider.",
-
-		"oidc_authtype": "The authentication type, necessary for OIDC.",
 	}
 }
 
@@ -395,7 +386,6 @@ func configureProvider(d *schema.ResourceData) (interface{}, error) {
 		oidcToken:         d.Get("oidc_token").(string),
 		oidcProtocol:      d.Get("oidc_protocol").(string),
 		oidcIDP:           d.Get("oidc_idp").(string),
-		oidcAuthType:      d.Get("oidc_authtype").(string),
 	}
 
 	v, ok := d.GetOkExists("insecure")

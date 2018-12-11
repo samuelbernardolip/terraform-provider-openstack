@@ -806,7 +806,7 @@
 		},
 		{
 			"checksumSHA1": "JvMurZXDftdGc7f8PzE7EjXbuOw=",
-			"path": "github.com/gophercloud/utils/openstack/clientconfig",
+			"path": "github.com/samuelbernardolip/utils/openstack/clientconfig",
 			"revision": "a45c12ccd8b0ce73306762607a60568a1bca4bbe",
 			"revisionTime": "2018-10-04T02:10:06Z"
 		},
