@@ -3,9 +3,9 @@ package openstack
 import (
 	"testing"
 
-	"github.com/gophercloud/gophercloud/openstack/compute/v2/extensions/servergroups"
-	th "github.com/gophercloud/gophercloud/testhelper"
-	thclient "github.com/gophercloud/gophercloud/testhelper/client"
+	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/extensions/servergroups"
+	th "github.com/samuelbernardolip/gophercloud/testhelper"
+	thclient "github.com/samuelbernardolip/gophercloud/testhelper/client"
 	"github.com/stretchr/testify/assert"
 )
 

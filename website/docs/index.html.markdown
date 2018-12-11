@@ -230,7 +230,7 @@ document; however, we'll try to provide assistance where we can.
 
 ### Gophercloud
 
-This provider uses [Gophercloud](https://github.com/gophercloud/gophercloud)
+This provider uses [Gophercloud](https://github.com/samuelbernardolip/gophercloud)
 as the Go OpenStack SDK. All API interaction between this provider and an
 OpenStack cloud is done exclusively with Gophercloud.
 

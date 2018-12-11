@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/Unknwon/com"
-	"github.com/gophercloud/gophercloud"
+	"github.com/samuelbernardolip/gophercloud"
 	"github.com/hashicorp/terraform/flatmap"
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/helper/schema"

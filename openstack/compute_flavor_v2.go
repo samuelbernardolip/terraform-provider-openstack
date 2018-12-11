@@ -1,7 +1,7 @@
 package openstack
 
 import (
-	"github.com/gophercloud/gophercloud/openstack/compute/v2/flavors"
+	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/flavors"
 )
 
 func expandComputeFlavorV2ExtraSpecs(raw map[string]interface{}) flavors.ExtraSpecsOpts {

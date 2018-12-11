@@ -7,7 +7,7 @@ import (
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/terraform"
 
-	"github.com/gophercloud/gophercloud/openstack/identity/v3/roles"
+	"github.com/samuelbernardolip/gophercloud/openstack/identity/v3/roles"
 )
 
 func TestAccIdentityV3Role_basic(t *testing.T) {

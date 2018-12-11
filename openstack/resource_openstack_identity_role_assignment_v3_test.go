@@ -4,15 +4,15 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/gophercloud/gophercloud/openstack/identity/v3/projects"
+	"github.com/samuelbernardolip/gophercloud/openstack/identity/v3/projects"
 
-	"github.com/gophercloud/gophercloud/pagination"
+	"github.com/samuelbernardolip/gophercloud/pagination"
 
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/terraform"
 
-	"github.com/gophercloud/gophercloud/openstack/identity/v3/roles"
-	"github.com/gophercloud/gophercloud/openstack/identity/v3/users"
+	"github.com/samuelbernardolip/gophercloud/openstack/identity/v3/roles"
+	"github.com/samuelbernardolip/gophercloud/openstack/identity/v3/users"
 )
 
 func TestAccIdentityV3RoleAssignment_basic(t *testing.T) {

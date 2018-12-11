@@ -6,7 +6,7 @@ import (
 
 	"github.com/hashicorp/terraform/helper/schema"
 
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/subnetpools"
+	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/subnetpools"
 )
 
 func dataSourceNetworkingSubnetPoolV2() *schema.Resource {

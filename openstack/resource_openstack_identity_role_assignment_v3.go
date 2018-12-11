@@ -6,9 +6,9 @@ import (
 
 	"strings"
 
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/openstack/identity/v3/roles"
-	"github.com/gophercloud/gophercloud/pagination"
+	"github.com/samuelbernardolip/gophercloud"
+	"github.com/samuelbernardolip/gophercloud/openstack/identity/v3/roles"
+	"github.com/samuelbernardolip/gophercloud/pagination"
 	"github.com/hashicorp/terraform/helper/schema"
 )
 

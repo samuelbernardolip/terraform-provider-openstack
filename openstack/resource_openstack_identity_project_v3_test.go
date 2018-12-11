@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/terraform"
 
-	"github.com/gophercloud/gophercloud/openstack/identity/v3/projects"
+	"github.com/samuelbernardolip/gophercloud/openstack/identity/v3/projects"
 )
 
 func TestAccIdentityV3Project_basic(t *testing.T) {

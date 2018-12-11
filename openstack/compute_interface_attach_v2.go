@@ -5,8 +5,8 @@ import (
 	"log"
 	"strings"
 
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/openstack/compute/v2/extensions/attachinterfaces"
+	"github.com/samuelbernardolip/gophercloud"
+	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/extensions/attachinterfaces"
 
 	"github.com/hashicorp/terraform/helper/resource"
 )

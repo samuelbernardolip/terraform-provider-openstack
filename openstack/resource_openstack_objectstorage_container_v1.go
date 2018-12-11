@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/openstack/objectstorage/v1/containers"
-	"github.com/gophercloud/gophercloud/openstack/objectstorage/v1/objects"
-	"github.com/gophercloud/gophercloud/pagination"
+	"github.com/samuelbernardolip/gophercloud"
+	"github.com/samuelbernardolip/gophercloud/openstack/objectstorage/v1/containers"
+	"github.com/samuelbernardolip/gophercloud/openstack/objectstorage/v1/objects"
+	"github.com/samuelbernardolip/gophercloud/pagination"
 	"github.com/hashicorp/terraform/helper/schema"
 	"github.com/hashicorp/terraform/helper/validation"
 )

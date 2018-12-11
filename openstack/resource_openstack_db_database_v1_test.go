@@ -8,8 +8,8 @@ import (
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/terraform"
 
-	"github.com/gophercloud/gophercloud/openstack/db/v1/databases"
-	"github.com/gophercloud/gophercloud/openstack/db/v1/instances"
+	"github.com/samuelbernardolip/gophercloud/openstack/db/v1/databases"
+	"github.com/samuelbernardolip/gophercloud/openstack/db/v1/instances"
 )
 
 func TestAccDatabaseV1Database_basic(t *testing.T) {

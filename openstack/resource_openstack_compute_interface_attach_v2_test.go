@@ -7,7 +7,7 @@ import (
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/terraform"
 
-	"github.com/gophercloud/gophercloud/openstack/compute/v2/extensions/attachinterfaces"
+	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/extensions/attachinterfaces"
 )
 
 func TestAccComputeV2InterfaceAttach_basic(t *testing.T) {

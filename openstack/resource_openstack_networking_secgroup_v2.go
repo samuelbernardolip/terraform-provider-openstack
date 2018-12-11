@@ -8,10 +8,10 @@ import (
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/helper/schema"
 
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/attributestags"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/security/groups"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/extensions/security/rules"
+	"github.com/samuelbernardolip/gophercloud"
+	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/attributestags"
+	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/security/groups"
+	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/security/rules"
 )
 
 func resourceNetworkingSecGroupV2() *schema.Resource {

@@ -5,7 +5,7 @@ import (
 	"log"
 	"sort"
 
-	"github.com/gophercloud/gophercloud/openstack/blockstorage/v3/snapshots"
+	"github.com/samuelbernardolip/gophercloud/openstack/blockstorage/v3/snapshots"
 	"github.com/hashicorp/terraform/helper/schema"
 )
 

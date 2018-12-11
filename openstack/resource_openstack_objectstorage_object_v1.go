@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/gophercloud/gophercloud/openstack/objectstorage/v1/objects"
+	"github.com/samuelbernardolip/gophercloud/openstack/objectstorage/v1/objects"
 	"github.com/hashicorp/terraform/helper/schema"
 	"github.com/mitchellh/go-homedir"
 )

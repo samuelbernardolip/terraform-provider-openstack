@@ -8,14 +8,14 @@ import (
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/terraform"
 
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/openstack/blockstorage/v2/volumes"
-	"github.com/gophercloud/gophercloud/openstack/compute/v2/extensions/secgroups"
-	"github.com/gophercloud/gophercloud/openstack/compute/v2/extensions/volumeattach"
-	"github.com/gophercloud/gophercloud/openstack/compute/v2/servers"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/networks"
-	"github.com/gophercloud/gophercloud/openstack/networking/v2/ports"
-	"github.com/gophercloud/gophercloud/pagination"
+	"github.com/samuelbernardolip/gophercloud"
+	"github.com/samuelbernardolip/gophercloud/openstack/blockstorage/v2/volumes"
+	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/extensions/secgroups"
+	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/extensions/volumeattach"
+	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/servers"
+	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/networks"
+	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/ports"
+	"github.com/samuelbernardolip/gophercloud/pagination"
 )
 
 func TestAccComputeV2Instance_basic(t *testing.T) {

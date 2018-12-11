@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/gophercloud/gophercloud/openstack/compute/v2/flavors"
+	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/flavors"
 	"github.com/hashicorp/terraform/helper/schema"
 )
 

@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/gophercloud/gophercloud/openstack/compute/v2/flavors"
+	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/flavors"
 )
 
 func TestExpandComputeFlavorV2ExtraSpecs(t *testing.T) {

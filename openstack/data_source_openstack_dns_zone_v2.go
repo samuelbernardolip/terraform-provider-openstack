@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/gophercloud/gophercloud/openstack/dns/v2/zones"
+	"github.com/samuelbernardolip/gophercloud/openstack/dns/v2/zones"
 	"github.com/hashicorp/terraform/helper/schema"
 )
 

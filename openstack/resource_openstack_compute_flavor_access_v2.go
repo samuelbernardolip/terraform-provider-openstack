@@ -7,9 +7,9 @@ import (
 
 	"github.com/hashicorp/terraform/helper/schema"
 
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/openstack/compute/v2/flavors"
-	"github.com/gophercloud/gophercloud/pagination"
+	"github.com/samuelbernardolip/gophercloud"
+	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/flavors"
+	"github.com/samuelbernardolip/gophercloud/pagination"
 )
 
 func resourceComputeFlavorAccessV2() *schema.Resource {

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/gophercloud/gophercloud"
-	"github.com/gophercloud/gophercloud/openstack/identity/v3/endpoints"
-	"github.com/gophercloud/gophercloud/openstack/identity/v3/services"
+	"github.com/samuelbernardolip/gophercloud"
+	"github.com/samuelbernardolip/gophercloud/openstack/identity/v3/endpoints"
+	"github.com/samuelbernardolip/gophercloud/openstack/identity/v3/services"
 	"github.com/hashicorp/terraform/helper/schema"
 )
 

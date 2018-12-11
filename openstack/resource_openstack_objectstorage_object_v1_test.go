@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gophercloud/gophercloud/openstack/objectstorage/v1/objects"
+	"github.com/samuelbernardolip/gophercloud/openstack/objectstorage/v1/objects"
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/terraform"
 )

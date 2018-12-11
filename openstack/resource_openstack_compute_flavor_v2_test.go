@@ -8,7 +8,7 @@ import (
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/terraform"
 
-	"github.com/gophercloud/gophercloud/openstack/compute/v2/flavors"
+	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/flavors"
 )
 
 func TestAccComputeV2Flavor_basic(t *testing.T) {

@@ -5,7 +5,7 @@ import (
 
 	"github.com/hashicorp/terraform/helper/schema"
 
-	"github.com/gophercloud/gophercloud/openstack/identity/v3/tokens"
+	"github.com/samuelbernardolip/gophercloud/openstack/identity/v3/tokens"
 )
 
 func dataSourceIdentityAuthScopeV3() *schema.Resource {

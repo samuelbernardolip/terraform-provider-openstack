@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/gophercloud/gophercloud/openstack/containerinfra/v1/clustertemplates"
+	"github.com/samuelbernardolip/gophercloud/openstack/containerinfra/v1/clustertemplates"
 	"github.com/hashicorp/terraform/helper/schema"
 )
 
