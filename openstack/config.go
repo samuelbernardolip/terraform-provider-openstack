@@ -40,6 +40,10 @@ type Config struct {
 	Username          string
 	UserID            string
 	useOctavia        bool
+	oidcToken         string
+	oidcProtocol      string
+	oidcIDP           string
+	oidcAuthType      string
 
 	OsClient *gophercloud.ProviderClient
 }
@@ -99,6 +103,26 @@ func (c *Config) LoadAndValidate() error {
 			v := (!*cloud.Verify)
 			c.Insecure = &v
 		}
+	} else if c.oidcToken != "" {
+		authInfo := &clientconfig.AuthInfo{
+			AuthURL:           c.IdentityEndpoint,
+			DefaultDomain:     c.DefaultDomain,
+			DomainID:          c.DomainID,
+			DomainName:        c.DomainName,
+			ProjectDomainID:   c.ProjectDomainID,
+			ProjectDomainName: c.ProjectDomainName,
+			ProjectID:         c.TenantID,
+			ProjectName:       c.TenantName,
+			UserDomainID:      c.UserDomainID,
+			UserDomainName:    c.UserDomainName,
+			Username:          c.Username,
+			UserID:            c.UserID,
+			oidcToken:         c.oidcToken,
+			oidcIDP:           c.oidcIDP,
+			oidcAuthType:      c.oidcAuthType,
+			oidcProtocol:      c.oidcProtocol,
+		}
+		clientOpts.AuthInfo = authInfo
 	} else {
 		authInfo := &clientconfig.AuthInfo{
 			AuthURL:           c.IdentityEndpoint,

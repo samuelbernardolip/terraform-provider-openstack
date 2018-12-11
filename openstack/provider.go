@@ -182,6 +182,34 @@ func Provider() terraform.ResourceProvider {
 				DefaultFunc: schema.EnvDefaultFunc("OS_CLOUD", ""),
 				Description: descriptions["cloud"],
 			},
+
+			"oidc_token": &schema.Schema{
+				Type:        schema.TypeString,
+				Optional:    true,
+				DefaultFunc: schema.EnvDefaultFunc("OS_ACCESS_TOKEN", ""),
+				Description: descriptions["oidc_token"],
+			},
+
+			"oidc_protocol": &schema.Schema{
+				Type:        schema.TypeString,
+				Optional:    true,
+				DefaultFunc: schema.EnvDefaultFunc("OS_PROTOCOL", ""),
+				Description: descriptions["oidc_protocol"],
+			},
+
+			"oidc_idp": &schema.Schema{
+				Type:        schema.TypeString,
+				Optional:    true,
+				DefaultFunc: schema.EnvDefaultFunc("OS_IDENTITY_PROVIDER", ""),
+				Description: descriptions["oidc_idp"],
+			},
+
+			"oidc_authtype": &schema.Schema{
+				Type:        schema.TypeString,
+				Optional:    true,
+				DefaultFunc: schema.EnvDefaultFunc("OS_AUTH_TYPE", ""),
+				Description: descriptions["oidc_authtype"],
+			},
 		},
 
 		DataSourcesMap: map[string]*schema.Resource{
@@ -329,6 +357,14 @@ func init() {
 			"service (Octavia) instead of the Networking service (Neutron).",
 
 		"cloud": "An entry in a `clouds.yaml` file to use.",
+
+		"oidc_token": "The OIDC access token.",
+
+		"oidc_protocol": "The OIDC protocol.",
+
+		"oidc_idp": "The OIDC identity provider.",
+
+		"oidc_authtype": "The authentication type, necessary for OIDC.",
 	}
 }
 
@@ -356,6 +392,10 @@ func configureProvider(d *schema.ResourceData) (interface{}, error) {
 		Username:          d.Get("user_name").(string),
 		UserID:            d.Get("user_id").(string),
 		useOctavia:        d.Get("use_octavia").(bool),
+		oidcToken:         d.Get("oidc_token").(string),
+		oidcProtocol:      d.Get("oidc_protocol").(string),
+		oidcIDP:           d.Get("oidc_idp").(string),
+		oidcAuthType:      d.Get("oidc_authtype").(string),
 	}
 
 	v, ok := d.GetOkExists("insecure")

@@ -33,6 +33,10 @@ var (
 	OS_VPN_ENVIRONMENT             = os.Getenv("OS_VPN_ENVIRONMENT")
 	OS_USE_OCTAVIA                 = os.Getenv("OS_USE_OCTAVIA")
 	OS_CONTAINER_INFRA_ENVIRONMENT = os.Getenv("OS_CONTAINER_INFRA_ENVIRONMENT")
+	OS_ACCESS_TOKEN                = os.Getenv("OS_ACCESS_TOKEN")
+	OS_PROTOCOL                    = os.Getenv("OS_PROTOCOL")
+	OS_IDENTITY_PROVIDER           = os.Getenv("OS_IDENTITY_PROVIDER")
+	OS_AUTH_TYPE                   = os.Getenv("OS_AUTH_TYPE")
 )
 
 var testAccProviders map[string]terraform.ResourceProvider
@@ -367,6 +371,10 @@ func testAccAuthFromEnv() (*Config, error) {
 		UserDomainName:    os.Getenv("OS_USER_DOMAIN_NAME"),
 		Username:          os.Getenv("OS_USERNAME"),
 		UserID:            os.Getenv("OS_USER_ID"),
+		oidcToken:         os.Getenv("OS_ACCESS_TOKEN"),
+		oidcProtocol:      os.Getenv("OS_PROTOCOL"),
+		oidcIDP:           os.Getenv("OS_IDENTITY_PROVIDER"),
+		oidcAuthType:      os.Getenv("OS_AUTH_TYPE"),
 	}
 
 	if err := config.LoadAndValidate(); err != nil {
