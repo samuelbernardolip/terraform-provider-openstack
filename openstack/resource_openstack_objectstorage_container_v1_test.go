@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/samuelbernardolip/gophercloud/openstack/objectstorage/v1/containers"
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/terraform"
+	"github.com/samuelbernardolip/gophercloud/openstack/objectstorage/v1/containers"
 )
 
 func TestAccObjectStorageV1Container_basic(t *testing.T) {

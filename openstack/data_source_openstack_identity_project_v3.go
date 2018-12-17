@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/samuelbernardolip/gophercloud/openstack/identity/v3/projects"
 	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/samuelbernardolip/gophercloud/openstack/identity/v3/projects"
 )
 
 func dataSourceIdentityProjectV3() *schema.Resource {

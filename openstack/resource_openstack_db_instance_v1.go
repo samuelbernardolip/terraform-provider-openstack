@@ -5,12 +5,12 @@ import (
 	"log"
 	"time"
 
+	"github.com/hashicorp/terraform/helper/resource"
+	"github.com/hashicorp/terraform/helper/schema"
 	"github.com/samuelbernardolip/gophercloud"
 	"github.com/samuelbernardolip/gophercloud/openstack/db/v1/databases"
 	"github.com/samuelbernardolip/gophercloud/openstack/db/v1/instances"
 	"github.com/samuelbernardolip/gophercloud/openstack/db/v1/users"
-	"github.com/hashicorp/terraform/helper/resource"
-	"github.com/hashicorp/terraform/helper/schema"
 )
 
 func resourceDatabaseInstanceV1() *schema.Resource {

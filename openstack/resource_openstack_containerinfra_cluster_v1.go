@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/samuelbernardolip/gophercloud"
-	"github.com/samuelbernardolip/gophercloud/openstack/containerinfra/v1/clusters"
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/samuelbernardolip/gophercloud"
+	"github.com/samuelbernardolip/gophercloud/openstack/containerinfra/v1/clusters"
 )
 
 func resourceContainerInfraClusterV1() *schema.Resource {

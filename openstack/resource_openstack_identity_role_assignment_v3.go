@@ -6,10 +6,10 @@ import (
 
 	"strings"
 
+	"github.com/hashicorp/terraform/helper/schema"
 	"github.com/samuelbernardolip/gophercloud"
 	"github.com/samuelbernardolip/gophercloud/openstack/identity/v3/roles"
 	"github.com/samuelbernardolip/gophercloud/pagination"
-	"github.com/hashicorp/terraform/helper/schema"
 )
 
 func resourceIdentityRoleAssignmentV3() *schema.Resource {

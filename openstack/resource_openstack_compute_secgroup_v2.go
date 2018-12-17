@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/samuelbernardolip/gophercloud"
-	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/extensions/secgroups"
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/samuelbernardolip/gophercloud"
+	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/extensions/secgroups"
 )
 
 func resourceComputeSecGroupV2() *schema.Resource {

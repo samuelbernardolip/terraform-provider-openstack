@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/extensions/floatingips"
 	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/extensions/floatingips"
 )
 
 func resourceComputeFloatingIPV2() *schema.Resource {

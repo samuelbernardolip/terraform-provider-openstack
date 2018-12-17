@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/samuelbernardolip/gophercloud"
-	"github.com/samuelbernardolip/gophercloud/openstack/db/v1/databases"
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/samuelbernardolip/gophercloud"
+	"github.com/samuelbernardolip/gophercloud/openstack/db/v1/databases"
 )
 
 func resourceDatabaseDatabaseV1() *schema.Resource {

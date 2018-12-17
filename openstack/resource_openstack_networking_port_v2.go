@@ -6,13 +6,13 @@ import (
 	"log"
 	"time"
 
+	"github.com/hashicorp/terraform/helper/hashcode"
+	"github.com/hashicorp/terraform/helper/resource"
+	"github.com/hashicorp/terraform/helper/schema"
 	"github.com/samuelbernardolip/gophercloud"
 	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/attributestags"
 	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/extradhcpopts"
 	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/ports"
-	"github.com/hashicorp/terraform/helper/hashcode"
-	"github.com/hashicorp/terraform/helper/resource"
-	"github.com/hashicorp/terraform/helper/schema"
 )
 
 func resourceNetworkingPortV2() *schema.Resource {

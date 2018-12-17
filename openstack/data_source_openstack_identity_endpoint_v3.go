@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/hashicorp/terraform/helper/schema"
 	"github.com/samuelbernardolip/gophercloud"
 	"github.com/samuelbernardolip/gophercloud/openstack/identity/v3/endpoints"
 	"github.com/samuelbernardolip/gophercloud/openstack/identity/v3/services"
-	"github.com/hashicorp/terraform/helper/schema"
 )
 
 func dataSourceIdentityEndpointV3() *schema.Resource {

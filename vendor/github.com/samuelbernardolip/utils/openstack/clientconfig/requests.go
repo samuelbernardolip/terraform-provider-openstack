@@ -520,21 +520,21 @@ func v3auth(cloud *Cloud, opts *ClientOpts) (*gophercloud.AuthOptions, error) {
 		}
 	}
 
-	if cloud.AuthInfo.oidcToken == "" {
+	if cloud.AuthInfo.OidcToken == "" {
 		if v := os.Getenv(envPrefix + "ACCESS_TOKEN"); v != "" {
-			cloud.AuthInfo.oidcToken = v
+			cloud.AuthInfo.OidcToken = v
 		}
 	}
 
-	if cloud.AuthInfo.oidcIDP == "" {
+	if cloud.AuthInfo.OidcIDP == "" {
 		if v := os.Getenv(envPrefix + "IDENTITY_PROVIDER"); v != "" {
-			cloud.AuthInfo.oidcIDP = v
+			cloud.AuthInfo.OidcIDP = v
 		}
 	}
 
-	if cloud.AuthInfo.oidcProtocol == "" {
+	if cloud.AuthInfo.OidcProtocol == "" {
 		if v := os.Getenv(envPrefix + "PROTOCOL"); v != "" {
-			cloud.AuthInfo.oidcProtocol = v
+			cloud.AuthInfo.OidcProtocol = v
 		}
 	}
 
@@ -573,9 +573,9 @@ func v3auth(cloud *Cloud, opts *ClientOpts) (*gophercloud.AuthOptions, error) {
 		TenantName:       cloud.AuthInfo.ProjectName,
 		DomainID:         cloud.AuthInfo.UserDomainID,
 		DomainName:       cloud.AuthInfo.UserDomainName,
-		oidcToken:        cloud.AuthInfo.oidcToken,
-		oidcIDP:          cloud.AuthInfo.oidcIDP,
-		oidcProtocol:     cloud.AuthInfo.oidcProtocol,
+		OidcToken:        cloud.AuthInfo.OidcToken,
+		OidcIDP:          cloud.AuthInfo.OidcIDP,
+		OidcProtocol:     cloud.AuthInfo.OidcProtocol,
 	}
 
 	// If an auth_type of "token" was specified, then make sure

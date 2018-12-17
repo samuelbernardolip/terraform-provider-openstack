@@ -5,10 +5,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/samuelbernardolip/gophercloud/openstack/db/v1/instances"
-	"github.com/samuelbernardolip/gophercloud/openstack/db/v1/users"
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/terraform"
+	"github.com/samuelbernardolip/gophercloud/openstack/db/v1/instances"
+	"github.com/samuelbernardolip/gophercloud/openstack/db/v1/users"
 )
 
 func TestAccDatabaseV1User_basic(t *testing.T) {

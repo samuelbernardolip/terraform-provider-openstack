@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/hashicorp/terraform/helper/acctest"
+	"github.com/hashicorp/terraform/helper/resource"
+	"github.com/hashicorp/terraform/terraform"
 	"github.com/samuelbernardolip/gophercloud"
 	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/flavors"
 	"github.com/samuelbernardolip/gophercloud/openstack/identity/v3/projects"
 	"github.com/samuelbernardolip/gophercloud/pagination"
-	"github.com/hashicorp/terraform/helper/acctest"
-	"github.com/hashicorp/terraform/helper/resource"
-	"github.com/hashicorp/terraform/terraform"
 )
 
 func TestAccComputeV2FlavorAccess_basic(t *testing.T) {

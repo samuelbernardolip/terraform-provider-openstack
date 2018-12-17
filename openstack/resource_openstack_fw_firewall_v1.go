@@ -5,11 +5,11 @@ import (
 	"log"
 	"time"
 
+	"github.com/hashicorp/terraform/helper/resource"
+	"github.com/hashicorp/terraform/helper/schema"
 	"github.com/samuelbernardolip/gophercloud"
 	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/fwaas/firewalls"
 	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/fwaas/routerinsertion"
-	"github.com/hashicorp/terraform/helper/resource"
-	"github.com/hashicorp/terraform/helper/schema"
 )
 
 func resourceFWFirewallV1() *schema.Resource {

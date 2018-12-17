@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/samuelbernardolip/gophercloud"
-	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/fwaas/rules"
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/terraform"
+	"github.com/samuelbernardolip/gophercloud"
+	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/fwaas/rules"
 )
 
 func TestAccFWRuleV1_basic(t *testing.T) {

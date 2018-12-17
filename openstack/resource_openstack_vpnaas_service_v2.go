@@ -5,10 +5,10 @@ import (
 	"log"
 	"time"
 
-	"github.com/samuelbernardolip/gophercloud"
-	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/vpnaas/services"
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/samuelbernardolip/gophercloud"
+	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/vpnaas/services"
 )
 
 func resourceServiceV2() *schema.Resource {

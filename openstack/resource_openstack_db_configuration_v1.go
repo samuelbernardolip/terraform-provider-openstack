@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/samuelbernardolip/gophercloud"
-	"github.com/samuelbernardolip/gophercloud/openstack/db/v1/configurations"
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/samuelbernardolip/gophercloud"
+	"github.com/samuelbernardolip/gophercloud/openstack/db/v1/configurations"
 )
 
 func resourceDatabaseConfigurationV1() *schema.Resource {

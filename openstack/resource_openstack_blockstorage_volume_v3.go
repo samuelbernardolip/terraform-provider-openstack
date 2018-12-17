@@ -6,13 +6,13 @@ import (
 	"log"
 	"time"
 
+	"github.com/hashicorp/terraform/helper/hashcode"
+	"github.com/hashicorp/terraform/helper/resource"
+	"github.com/hashicorp/terraform/helper/schema"
 	"github.com/samuelbernardolip/gophercloud"
 	"github.com/samuelbernardolip/gophercloud/openstack/blockstorage/extensions/volumeactions"
 	"github.com/samuelbernardolip/gophercloud/openstack/blockstorage/v3/volumes"
 	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/extensions/volumeattach"
-	"github.com/hashicorp/terraform/helper/hashcode"
-	"github.com/hashicorp/terraform/helper/resource"
-	"github.com/hashicorp/terraform/helper/schema"
 )
 
 func resourceBlockStorageVolumeV3() *schema.Resource {

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/flavors"
 	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/flavors"
 )
 
 func resourceComputeFlavorV2() *schema.Resource {

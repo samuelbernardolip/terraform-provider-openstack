@@ -5,10 +5,10 @@ import (
 	"log"
 	"time"
 
-	"github.com/samuelbernardolip/gophercloud"
-	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/vpnaas/ipsecpolicies"
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/samuelbernardolip/gophercloud"
+	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/vpnaas/ipsecpolicies"
 )
 
 func resourceIPSecPolicyV2() *schema.Resource {

@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/samuelbernardolip/gophercloud"
-	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/vpnaas/ikepolicies"
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/terraform"
+	"github.com/samuelbernardolip/gophercloud"
+	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/vpnaas/ikepolicies"
 )
 
 func TestAccIKEPolicyV2_basic(t *testing.T) {

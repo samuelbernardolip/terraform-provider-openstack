@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/fwaas/policies"
 	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/fwaas/policies"
 )
 
 func dataSourceFWPolicyV1() *schema.Resource {

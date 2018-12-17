@@ -8,11 +8,11 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/hashicorp/terraform/helper/pathorcontents"
+	"github.com/hashicorp/terraform/terraform"
 	"github.com/samuelbernardolip/gophercloud"
 	"github.com/samuelbernardolip/gophercloud/openstack"
 	"github.com/samuelbernardolip/gophercloud/openstack/objectstorage/v1/swauth"
-	"github.com/hashicorp/terraform/helper/pathorcontents"
-	"github.com/hashicorp/terraform/terraform"
 	"github.com/samuelbernardolip/utils/openstack/clientconfig"
 )
 

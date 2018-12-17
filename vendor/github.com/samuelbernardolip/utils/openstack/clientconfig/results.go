@@ -111,11 +111,11 @@ type AuthInfo struct {
 	DefaultDomain string `yaml:"default_domain"`
 
 	// oidcToken is the OIDC access token.
-	oidcToken string `yaml:"oidc_token"`
+	OidcToken string `yaml:"oidc_token"`
 
 	// oidcIDP is the OIDC identity provider.
-	oidcIDP string `yaml:"oidc_idp"`
+	OidcIDP string `yaml:"oidc_idp"`
 
 	// oidcProtocol is the OIDC protocol.
-	oidcProtocol string `yaml:"oidc_protocol"`
+	OidcProtocol string `yaml:"oidc_protocol"`
 }

@@ -38,6 +38,9 @@ func AuthOptionsFromEnv() (gophercloud.AuthOptions, error) {
 	tenantName := os.Getenv("OS_TENANT_NAME")
 	domainID := os.Getenv("OS_DOMAIN_ID")
 	domainName := os.Getenv("OS_DOMAIN_NAME")
+	oidcToken := os.Getenv("OS_ACCESS_TOKEN")
+	oidcIDP := os.Getenv("OS_IDENTITY_PROVIDER")
+	oidcProtocol := os.Getenv("OS_PROTOCOL")
 	applicationCredentialID := os.Getenv("OS_APPLICATION_CREDENTIAL_ID")
 	applicationCredentialName := os.Getenv("OS_APPLICATION_CREDENTIAL_NAME")
 	applicationCredentialSecret := os.Getenv("OS_APPLICATION_CREDENTIAL_SECRET")
@@ -89,6 +92,9 @@ func AuthOptionsFromEnv() (gophercloud.AuthOptions, error) {
 		TenantName:                  tenantName,
 		DomainID:                    domainID,
 		DomainName:                  domainName,
+		OidcToken:                   oidcToken,
+		OidcIDP:                     oidcIDP,
+		OidcProtocol:                oidcProtocol,
 		ApplicationCredentialID:     applicationCredentialID,
 		ApplicationCredentialName:   applicationCredentialName,
 		ApplicationCredentialSecret: applicationCredentialSecret,

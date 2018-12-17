@@ -10,6 +10,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/hashicorp/terraform/helper/hashcode"
+	"github.com/hashicorp/terraform/helper/resource"
+	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/hashicorp/terraform/helper/validation"
 	"github.com/samuelbernardolip/gophercloud"
 	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/extensions/availabilityzones"
 	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/extensions/bootfromvolume"
@@ -20,10 +24,6 @@ import (
 	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/flavors"
 	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/images"
 	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/servers"
-	"github.com/hashicorp/terraform/helper/hashcode"
-	"github.com/hashicorp/terraform/helper/resource"
-	"github.com/hashicorp/terraform/helper/schema"
-	"github.com/hashicorp/terraform/helper/validation"
 )
 
 func resourceComputeInstanceV2() *schema.Resource {

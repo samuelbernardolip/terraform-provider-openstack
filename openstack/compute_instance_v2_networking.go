@@ -14,12 +14,12 @@ import (
 	"log"
 	"os"
 
+	"github.com/hashicorp/terraform/helper/schema"
 	"github.com/samuelbernardolip/gophercloud"
 	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/extensions/tenantnetworks"
 	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/servers"
 	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/networks"
 	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/ports"
-	"github.com/hashicorp/terraform/helper/schema"
 )
 
 // InstanceNIC is a structured representation of a Gophercloud servers.Server

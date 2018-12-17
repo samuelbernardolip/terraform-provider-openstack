@@ -6,11 +6,11 @@ import (
 	"log"
 	"strings"
 
-	"github.com/samuelbernardolip/gophercloud"
-	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/extensions/secgroups"
 	"github.com/hashicorp/terraform/helper/hashcode"
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/samuelbernardolip/gophercloud"
+	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/extensions/secgroups"
 )
 
 func computeSecGroupV2RulesCheckForErrors(d *schema.ResourceData) error {

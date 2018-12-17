@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/hashicorp/terraform/helper/resource"
+	"github.com/hashicorp/terraform/terraform"
 	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/extensions/security/groups"
 	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/networks"
 	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/ports"
 	"github.com/samuelbernardolip/gophercloud/openstack/networking/v2/subnets"
-	"github.com/hashicorp/terraform/helper/resource"
-	"github.com/hashicorp/terraform/terraform"
 )
 
 func TestAccNetworkingV2Port_basic(t *testing.T) {

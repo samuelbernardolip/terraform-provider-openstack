@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/extensions/servergroups"
 	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/samuelbernardolip/gophercloud/openstack/compute/v2/extensions/servergroups"
 )
 
 func resourceComputeServerGroupV2() *schema.Resource {

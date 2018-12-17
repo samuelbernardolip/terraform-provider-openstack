@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/samuelbernardolip/gophercloud/openstack/identity/v3/users"
 	"github.com/hashicorp/terraform/helper/schema"
+	"github.com/samuelbernardolip/gophercloud/openstack/identity/v3/users"
 )
 
 func dataSourceIdentityUserV3() *schema.Resource {

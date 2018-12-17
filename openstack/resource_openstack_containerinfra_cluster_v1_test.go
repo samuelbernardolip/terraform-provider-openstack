@@ -5,10 +5,10 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/samuelbernardolip/gophercloud/openstack/containerinfra/v1/clusters"
 	"github.com/hashicorp/terraform/helper/acctest"
 	"github.com/hashicorp/terraform/helper/resource"
 	"github.com/hashicorp/terraform/terraform"
+	"github.com/samuelbernardolip/gophercloud/openstack/containerinfra/v1/clusters"
 )
 
 func TestAccContainerInfraV1Cluster_basic(t *testing.T) {

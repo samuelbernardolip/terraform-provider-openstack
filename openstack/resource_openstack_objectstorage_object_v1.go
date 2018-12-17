@@ -7,9 +7,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/samuelbernardolip/gophercloud/openstack/objectstorage/v1/objects"
 	"github.com/hashicorp/terraform/helper/schema"
 	"github.com/mitchellh/go-homedir"
+	"github.com/samuelbernardolip/gophercloud/openstack/objectstorage/v1/objects"
 )
 
 func resourceObjectStorageObjectV1() *schema.Resource {
