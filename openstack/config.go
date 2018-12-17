@@ -116,9 +116,9 @@ func (c *Config) LoadAndValidate() error {
 			UserDomainName:    c.UserDomainName,
 			Username:          c.Username,
 			UserID:            c.UserID,
-			oidcToken:         c.oidcToken,
-			oidcIDP:           c.oidcIDP,
-			oidcProtocol:      c.oidcProtocol,
+			OidcToken:         c.oidcToken,
+			OidcIDP:           c.oidcIDP,
+			OidcProtocol:      c.oidcProtocol,
 		}
 		clientOpts.AuthInfo = authInfo
 	} else {
